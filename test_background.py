@@ -42,7 +42,7 @@ def get_file_name(glob_listing):
            )
 
 def load_test_dict():
-    files = glob.glob(test_objects_path"*.pkl")
+    files = glob.glob(test_objects_path+"*.pkl")
         
     return {get_file_name(file)
             : pkl_load(
