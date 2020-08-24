@@ -1,6 +1,8 @@
 import glob
 import pickle as pkl
 import numpy as np
+import os
+test_objects_path = 'test_objects' + os.path.sep
 
 def pkl_dump(obj_name_list): 
 
@@ -13,21 +15,21 @@ def pkl_dump(obj_name_list):
     for pair in obj_name_list:
         obj, file_name = pair
         
-        files = glob.glob("test_objects/*.pkl")
+        files = glob.glob(test_objects_path + "*.pkl")
     
         existing_files = [get_file_name(file) for file in files]
 
         if file_name in existing_files:
             return print(f'can"t dump, {file_name} already exists')
 
-        with open(f'test_objects/{file_name}.pkl', 'wb') as f:
+        with open(test_objects_path + f'{file_name}.pkl', 'wb') as f:
             pkl.dump(obj, f)
         
     return
         
     
 def pkl_load(file_name):
-    with open(f'test_objects/{file_name}.pkl', 'rb') as f:
+    with open(test_objects_path + f'{file_name}.pkl', 'rb') as f:
         obj = pkl.load(f)
         
     return obj
@@ -35,12 +37,12 @@ def pkl_load(file_name):
 
 def get_file_name(glob_listing):
     return (glob_listing
-            .split('/')[1] #get the file name
+            .split(os.path.sep)[1] #get the file name
             .split('.')[0] #remove .pkl
            )
 
 def load_test_dict():
-    files = glob.glob("test_objects/*.pkl")
+    files = glob.glob(test_objects_path+"*.pkl")
         
     return {get_file_name(file)
             : pkl_load(
@@ -59,9 +61,9 @@ def run_test(obj, name):
         
         else:
             assert obj==test_dict[name]
-        return 'Hey, you did it.  Good job.'
+        return '✅ Hey, you did it.  Good job.'
     except AssertionError:
-        return 'Try again'
+        return '❌ Try again'
     
 def unit_square():
     square = plt.Rectangle((0,0), 1,1, fill=False, color='blue')
