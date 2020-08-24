@@ -171,7 +171,7 @@ run_test(x, 'x1')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -319,7 +319,7 @@ run_test(y, 'y1')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -362,7 +362,7 @@ run_test(x, 'x2')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -375,7 +375,7 @@ run_test(y, 'y2')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -447,7 +447,7 @@ run_test(x, 'x3')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -460,7 +460,7 @@ run_test(y, 'y3')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -512,7 +512,7 @@ run_test(x, 'x4')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -525,7 +525,7 @@ run_test(y, 'y4')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -622,7 +622,7 @@ run_test(x, 'x5')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -635,7 +635,7 @@ run_test(y, 'y5')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -697,7 +697,7 @@ run_test(inside_x, 'inside_x')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -709,7 +709,7 @@ run_test(inside_y, 'inside_y')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -746,7 +746,7 @@ run_test(outside_x, 'outside_x')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -761,7 +761,7 @@ run_test(outside_y, 'outside_y')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -883,9 +883,9 @@ obj_names = obj_names[:-2]
 print()
 ```
 
-    pts_in_circle?  Hey, you did it.  Good job.
-    pts_out_circle?  Hey, you did it.  Good job.
-    pi_est?  Hey, you did it.  Good job.
+    pts_in_circle?  ✅ Hey, you did it.  Good job.
+    pts_out_circle?  ✅ Hey, you did it.  Good job.
+    pi_est?  ✅ Hey, you did it.  Good job.
     
 
 
@@ -897,7 +897,7 @@ run_test(pi_est_error_pct, 'pi_est_error_pct')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
@@ -910,7 +910,7 @@ run_test(pi_est_error_pct_rounded, 'pi_est_error_pct_rounded')
 
 
 
-    'Hey, you did it.  Good job.'
+    '✅ Hey, you did it.  Good job.'
 
 
 
