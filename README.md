@@ -1,4 +1,4 @@
-# To celebrate the end of your first week: a long warmup!
+# This is a bit of a longer one for a Friday; don't sink a lot of time to this if you can't spare it!
 
 # Part 1: Numpy practice
 
